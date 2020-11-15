@@ -1,35 +1,67 @@
+:root {
+    --background-color: #1b1e1e;
+    --light-color: #ffffff;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-
-.main_container {
-    background-color: red;
+.main {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
     height: 100vh;
+
+}
+.main_container {
+    height: 100%;
     width: 100%;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 30px;
     grid-template-columns: repeat(3,minmax(100px, 250px));
-    justify-content: center;
+    /* grid-template-columns: ; */
+    /* justify-content: center; */
 
 }
-.main_social_media {
+
+/* bloque de social media */
+.main_block_category {
     text-align: center;
     justify-content: center;
 }
-.social_media_container{
-    border: black solid 1px;
+.icons_pages_container{
+    /* border: black solid 1px; */
     /* height: 200px;
     width: 200px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
-.social_media_img {
-    /* width: 100%; */
+.icon_page {
+    display: flex;
+    height: 70px;
+    background-color: rgb(255 255 255 / 34%) ;
+}
+.icon_page_url {
+    /* height: 100%;
+    width: 100%; */
+    margin: auto auto;
+}
+.icon_page_img {
     width: 50px;
+    display: block;
 }
 .main_group_title {
     margin-bottom: 20px;
 }
+
+/* termina bloque de social media */
+
+/* comienza bloque de entretenimiento */
+
+
